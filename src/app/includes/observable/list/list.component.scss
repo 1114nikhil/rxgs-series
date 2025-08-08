@@ -1,0 +1,30 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* If you want them in a row; remove if you want vertical */
+  flex-wrap: wrap;
+  gap: 2rem; // space between boxes
+
+  li {
+    a {
+      display: block;
+      padding: 1rem 1.5rem;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: limegreen;
+        color: #fff;
+        border-color: lime;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2px);
+      }
+    }
+  }
+}
